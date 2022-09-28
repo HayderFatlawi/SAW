@@ -2,25 +2,8 @@
 """
 Created on Sat Jun 11 23:49:47 2022
 
-@author: hp
-"""
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 11 17:45:52 2022
+@author: Hayder
 
-@author: hp
-"""
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jun 11 11:47:34 2022
-
-@author: hp
-"""
-
-"""
-Created on Fri Nov 12 15:08:28 2021
-
-@author: hp
 """
 import pandas as pd 
 import numpy as np
@@ -237,33 +220,7 @@ while n_samples < max_samples:
     Y=B
     R=Q
   
-    #while K<7:
-        
-#     z=0
-#     r=[]
-#     summ=0
-#     temp=random.sample(BB,v)
-#     for t in temp:
-#         r.append(t)
-#         R[t]+=1
-#         summ+=R[t]
-#         z+=1
-    
-#     K=2+round(summ/z)
-    
-#     print(K)
-# #best value <7
-#     for w in r:  
-#         if R[w]<K:
-#             C=np.vstack((A, X[w,:]))
-#             B=np.append(B, Y[w])   
-#             Q=np.append(Q, R[w]) 
-#             A=C
-        
-#     X=A
-#     Y=B
-#     R=Q
-    #print(main_c)
+  
     main_c+=1
 
 print('tp:'+str(p1/div))
@@ -282,10 +239,3 @@ print(precc)
 print(ones_ar)
 print(cp_ar)
 
-# plt.scatter(tpar, tnar, c ="blue")
-# plt.show()
-    
-# print('\n time is: '+str(time.time()-start))
-
-# for ac in acc:
-#     print('accuracy:'+str(ac))
