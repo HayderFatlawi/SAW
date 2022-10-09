@@ -90,7 +90,7 @@ max_samples = 160000
 qw=1600
 acc=[]
 #ht=OzaBaggingClassifier(base_estimator=HoeffdingTreeClassifier(),n_estimators=20)
-ht=SAMKNNClassifier()
+ht=AdaptiveRandomForestClassifier()
 X, Y = stream[n_samples:n_samples+qw,:-1], stream[n_samples:n_samples+qw,-1]
 R=np.ones((qw,), dtype=int)
 
